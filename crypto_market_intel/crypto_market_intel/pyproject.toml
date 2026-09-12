@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-market-intel"
+version = "1.0.0"
+description = "Standalone Bybit market-data and market-intelligence package; no trading authority."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx>=0.27",
+  "pydantic>=2.7",
+  "websockets>=14",
+]
+
+[project.optional-dependencies]
+storage = ["duckdb>=1.1", "pyarrow>=17"]
+dev = ["pytest>=8", "jsonschema>=4", "mypy>=1.11", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["live: opt-in tests that use real public exchange data"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = true
+mypy_path = "src"
+packages = ["crypto_market_intel"]
+
+[tool.setuptools.package-data]
+"crypto_market_intel.contracts" = ["schema.json", "CONTRACT.md"]

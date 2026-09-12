@@ -1,0 +1,7 @@
+# HM_CRYPTO_FEATURE_POLICY_V1
+
+This file documents fixed scoring semantics that are definitions rather than exchange/risk limits. Detection and walk-forward-sensitive thresholds used by the production engine are exposed in `.env.example` (structure tolerances, FVG/order-block thresholds, profile bins/quantiles, footprint imbalance, TPO acceptance, absorption/exhaustion, regime thresholds, freshness, scanner and breakout promotion thresholds).
+
+Breakout preliminary scoring is bounded to `[0,1]`. Percentage acceleration uses 55% normalized move magnitude and 45% capped volume acceleration contribution (volume acceleration cap 3x). Major-structure scoring starts at 0.65 plus `0.20 * structure_strength`; range/key-level/trendline detectors use fixed preliminary priors 0.78/0.74/0.72 before the global configurable promotion floor. These values only decide whether to spend deeper market-data resources; they never authorize a trade.
+
+Key-level strength is capped at 1.0 and increases with repeated touches plus a major-swing contribution. Regime confidence coefficients combine already-derived deterministic diagnostics; regime labels have no order authority. Fibonacci ratios in `PATTERN_DEFINITIONS.md` are mathematical definitions, not tunable thresholds. All such semantics are versioned through snapshot `feature_versions`; changing them requires a feature/policy version bump and updated tests.

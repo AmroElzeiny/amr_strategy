@@ -1,0 +1,874 @@
+{
+  "$defs": {
+    "BreakoutAlert": {
+      "additionalProperties": false,
+      "properties": {
+        "alert_id": {
+          "title": "Alert Id",
+          "type": "string"
+        },
+        "break_price": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            }
+          ],
+          "title": "Break Price"
+        },
+        "detector_type": {
+          "title": "Detector Type",
+          "type": "string"
+        },
+        "direction": {
+          "$ref": "#/$defs/Direction"
+        },
+        "event_time_utc": {
+          "format": "date-time",
+          "title": "Event Time Utc",
+          "type": "string"
+        },
+        "move_pct": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Move Pct"
+        },
+        "preliminary_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            }
+          ],
+          "title": "Preliminary Score"
+        },
+        "promotion_reason": {
+          "title": "Promotion Reason",
+          "type": "string"
+        },
+        "reference_level": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reference Level"
+        },
+        "snapshot_id": {
+          "title": "Snapshot Id",
+          "type": "string"
+        },
+        "structure_strength": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Structure Strength"
+        },
+        "symbol": {
+          "title": "Symbol",
+          "type": "string"
+        },
+        "volume_acceleration": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Volume Acceleration"
+        },
+        "watch_until_utc": {
+          "format": "date-time",
+          "title": "Watch Until Utc",
+          "type": "string"
+        },
+        "window_sec": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Window Sec"
+        }
+      },
+      "required": [
+        "alert_id",
+        "snapshot_id",
+        "symbol",
+        "direction",
+        "detector_type",
+        "event_time_utc",
+        "reference_level",
+        "break_price",
+        "move_pct",
+        "window_sec",
+        "volume_acceleration",
+        "structure_strength",
+        "preliminary_score",
+        "promotion_reason",
+        "watch_until_utc"
+      ],
+      "title": "BreakoutAlert",
+      "type": "object"
+    },
+    "DataQuality": {
+      "enum": [
+        "GOOD",
+        "DEGRADED",
+        "STALE",
+        "INVALID"
+      ],
+      "title": "DataQuality",
+      "type": "string"
+    },
+    "DecisionState": {
+      "enum": [
+        "NO_TRADE",
+        "WATCH",
+        "ARMED",
+        "ENTER"
+      ],
+      "title": "DecisionState",
+      "type": "string"
+    },
+    "Direction": {
+      "enum": [
+        "LONG",
+        "SHORT",
+        "NONE"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "Exchange": {
+      "enum": [
+        "BYBIT",
+        "BINANCE"
+      ],
+      "title": "Exchange",
+      "type": "string"
+    },
+    "ExecutionReport": {
+      "additionalProperties": false,
+      "properties": {
+        "approved": {
+          "title": "Approved",
+          "type": "boolean"
+        },
+        "avg_fill_price": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Avg Fill Price"
+        },
+        "contract_version": {
+          "const": "HM_CRYPTO_V1",
+          "title": "Contract Version",
+          "type": "string"
+        },
+        "created_at_utc": {
+          "format": "date-time",
+          "title": "Created At Utc",
+          "type": "string"
+        },
+        "daily_loss_lock": {
+          "title": "Daily Loss Lock",
+          "type": "boolean"
+        },
+        "environment": {
+          "$ref": "#/$defs/TradingEnvironment"
+        },
+        "exchange": {
+          "$ref": "#/$defs/Exchange"
+        },
+        "execution_id": {
+          "title": "Execution Id",
+          "type": "string"
+        },
+        "fees": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Fees"
+        },
+        "fill_state": {
+          "title": "Fill State",
+          "type": "string"
+        },
+        "final_notional": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Final Notional"
+        },
+        "final_qty": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Final Qty"
+        },
+        "integrity_hash": {
+          "title": "Integrity Hash",
+          "type": "string"
+        },
+        "leverage": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Leverage"
+        },
+        "margin_mode": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Margin Mode"
+        },
+        "market_mode": {
+          "$ref": "#/$defs/MarketMode"
+        },
+        "max_loss_lock": {
+          "title": "Max Loss Lock",
+          "type": "boolean"
+        },
+        "order_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Order Ids",
+          "type": "array"
+        },
+        "order_link_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Order Link Ids",
+          "type": "array"
+        },
+        "order_state": {
+          "title": "Order State",
+          "type": "string"
+        },
+        "realized_pnl": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Realized Pnl"
+        },
+        "reason_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reason Codes",
+          "type": "array"
+        },
+        "reconciled": {
+          "title": "Reconciled",
+          "type": "boolean"
+        },
+        "risk_snapshot_after": {
+          "additionalProperties": true,
+          "title": "Risk Snapshot After",
+          "type": "object"
+        },
+        "risk_snapshot_before": {
+          "additionalProperties": true,
+          "title": "Risk Snapshot Before",
+          "type": "object"
+        },
+        "signal_id": {
+          "title": "Signal Id",
+          "type": "string"
+        },
+        "stop_state": {
+          "title": "Stop State",
+          "type": "string"
+        },
+        "symbol": {
+          "title": "Symbol",
+          "type": "string"
+        },
+        "take_profit_state": {
+          "title": "Take Profit State",
+          "type": "string"
+        }
+      },
+      "required": [
+        "contract_version",
+        "execution_id",
+        "signal_id",
+        "created_at_utc",
+        "exchange",
+        "environment",
+        "market_mode",
+        "symbol",
+        "approved",
+        "reason_codes",
+        "final_qty",
+        "final_notional",
+        "leverage",
+        "margin_mode",
+        "order_ids",
+        "order_link_ids",
+        "order_state",
+        "fill_state",
+        "avg_fill_price",
+        "fees",
+        "realized_pnl",
+        "stop_state",
+        "take_profit_state",
+        "risk_snapshot_before",
+        "risk_snapshot_after",
+        "daily_loss_lock",
+        "max_loss_lock",
+        "reconciled",
+        "integrity_hash"
+      ],
+      "title": "ExecutionReport",
+      "type": "object"
+    },
+    "MarketMode": {
+      "enum": [
+        "SPOT",
+        "DERIVATIVES"
+      ],
+      "title": "MarketMode",
+      "type": "string"
+    },
+    "MarketSnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "breakout_alert": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BreakoutAlert"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "contract_version": {
+          "const": "HM_CRYPTO_V1",
+          "title": "Contract Version",
+          "type": "string"
+        },
+        "created_at_utc": {
+          "format": "date-time",
+          "title": "Created At Utc",
+          "type": "string"
+        },
+        "data_quality": {
+          "$ref": "#/$defs/DataQuality"
+        },
+        "derivatives": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Derivatives"
+        },
+        "environment": {
+          "$ref": "#/$defs/TradingEnvironment"
+        },
+        "event_time_utc": {
+          "format": "date-time",
+          "title": "Event Time Utc",
+          "type": "string"
+        },
+        "exchange": {
+          "$ref": "#/$defs/Exchange"
+        },
+        "feature_versions": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Feature Versions",
+          "type": "object"
+        },
+        "instrument": {
+          "additionalProperties": true,
+          "title": "Instrument",
+          "type": "object"
+        },
+        "levels": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Levels",
+          "type": "array"
+        },
+        "market_mode": {
+          "$ref": "#/$defs/MarketMode"
+        },
+        "orderbook": {
+          "additionalProperties": true,
+          "title": "Orderbook",
+          "type": "object"
+        },
+        "orderflow": {
+          "additionalProperties": true,
+          "title": "Orderflow",
+          "type": "object"
+        },
+        "quality_reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Quality Reasons",
+          "type": "array"
+        },
+        "regime": {
+          "additionalProperties": true,
+          "title": "Regime",
+          "type": "object"
+        },
+        "snapshot_id": {
+          "title": "Snapshot Id",
+          "type": "string"
+        },
+        "source_timestamps": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Source Timestamps",
+          "type": "object"
+        },
+        "structure": {
+          "additionalProperties": true,
+          "title": "Structure",
+          "type": "object"
+        },
+        "symbol": {
+          "title": "Symbol",
+          "type": "string"
+        },
+        "ticker": {
+          "additionalProperties": true,
+          "title": "Ticker",
+          "type": "object"
+        },
+        "timeframes": {
+          "additionalProperties": true,
+          "title": "Timeframes",
+          "type": "object"
+        },
+        "volume_profile": {
+          "additionalProperties": true,
+          "title": "Volume Profile",
+          "type": "object"
+        }
+      },
+      "required": [
+        "contract_version",
+        "snapshot_id",
+        "created_at_utc",
+        "event_time_utc",
+        "exchange",
+        "environment",
+        "market_mode",
+        "symbol",
+        "instrument",
+        "ticker",
+        "timeframes",
+        "structure",
+        "levels",
+        "volume_profile",
+        "orderflow",
+        "orderbook",
+        "derivatives",
+        "regime",
+        "breakout_alert",
+        "data_quality",
+        "quality_reasons",
+        "feature_versions",
+        "source_timestamps"
+      ],
+      "title": "MarketSnapshot",
+      "type": "object"
+    },
+    "OrderIntent": {
+      "enum": [
+        "OPEN",
+        "CLOSE",
+        "REDUCE",
+        "NONE"
+      ],
+      "title": "OrderIntent",
+      "type": "string"
+    },
+    "PatternType": {
+      "enum": [
+        "PRE_BREAKOUT",
+        "BREAKOUT",
+        "CONTINUATION",
+        "REVERSAL"
+      ],
+      "title": "PatternType",
+      "type": "string"
+    },
+    "TradeIntent": {
+      "additionalProperties": false,
+      "properties": {
+        "ai_confidence": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ai Confidence"
+        },
+        "ai_metadata": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ai Metadata"
+        },
+        "attempt_no": {
+          "title": "Attempt No",
+          "type": "integer"
+        },
+        "blockers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Blockers",
+          "type": "array"
+        },
+        "config_version": {
+          "title": "Config Version",
+          "type": "string"
+        },
+        "contract_version": {
+          "const": "HM_CRYPTO_V1",
+          "title": "Contract Version",
+          "type": "string"
+        },
+        "created_at_utc": {
+          "format": "date-time",
+          "title": "Created At Utc",
+          "type": "string"
+        },
+        "decision": {
+          "$ref": "#/$defs/DecisionState"
+        },
+        "deterministic_confidence": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            }
+          ],
+          "title": "Deterministic Confidence"
+        },
+        "direction": {
+          "$ref": "#/$defs/Direction"
+        },
+        "entry_plan": {
+          "additionalProperties": true,
+          "title": "Entry Plan",
+          "type": "object"
+        },
+        "environment": {
+          "$ref": "#/$defs/TradingEnvironment"
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "exchange": {
+          "$ref": "#/$defs/Exchange"
+        },
+        "final_confidence": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            }
+          ],
+          "title": "Final Confidence"
+        },
+        "integrity_hash": {
+          "title": "Integrity Hash",
+          "type": "string"
+        },
+        "invalidation": {
+          "additionalProperties": true,
+          "title": "Invalidation",
+          "type": "object"
+        },
+        "market_mode": {
+          "$ref": "#/$defs/MarketMode"
+        },
+        "order_intent": {
+          "$ref": "#/$defs/OrderIntent"
+        },
+        "pattern_type": {
+          "$ref": "#/$defs/PatternType"
+        },
+        "penalties": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Penalties",
+          "type": "array"
+        },
+        "projected_extension_target": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Projected Extension Target"
+        },
+        "risk_reward": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Risk Reward"
+        },
+        "signal_id": {
+          "title": "Signal Id",
+          "type": "string"
+        },
+        "snapshot_id": {
+          "title": "Snapshot Id",
+          "type": "string"
+        },
+        "strategy_version": {
+          "title": "Strategy Version",
+          "type": "string"
+        },
+        "symbol": {
+          "title": "Symbol",
+          "type": "string"
+        },
+        "targets": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Targets",
+          "type": "array"
+        },
+        "thesis_id": {
+          "title": "Thesis Id",
+          "type": "string"
+        },
+        "ttl_ms": {
+          "title": "Ttl Ms",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "contract_version",
+        "signal_id",
+        "snapshot_id",
+        "created_at_utc",
+        "exchange",
+        "environment",
+        "market_mode",
+        "symbol",
+        "pattern_type",
+        "direction",
+        "order_intent",
+        "decision",
+        "thesis_id",
+        "attempt_no",
+        "deterministic_confidence",
+        "ai_confidence",
+        "final_confidence",
+        "entry_plan",
+        "invalidation",
+        "targets",
+        "projected_extension_target",
+        "risk_reward",
+        "penalties",
+        "blockers",
+        "evidence",
+        "ttl_ms",
+        "config_version",
+        "strategy_version",
+        "ai_metadata",
+        "integrity_hash"
+      ],
+      "title": "TradeIntent",
+      "type": "object"
+    },
+    "TradingEnvironment": {
+      "enum": [
+        "DEMO",
+        "REAL"
+      ],
+      "title": "TradingEnvironment",
+      "type": "string"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "contract_version": "HM_CRYPTO_V1",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/MarketSnapshot"
+    },
+    {
+      "$ref": "#/$defs/TradeIntent"
+    },
+    {
+      "$ref": "#/$defs/ExecutionReport"
+    }
+  ],
+  "title": "HM_CRYPTO_V1 Contracts"
+}

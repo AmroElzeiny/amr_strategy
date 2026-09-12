@@ -1,0 +1,222 @@
+{
+  "breakout_alert": {
+    "acceptance_score": 0.94,
+    "breakout_completed": true,
+    "breakout_score": 0.94,
+    "breakout_type": "BREAK_AND_ACCEPT",
+    "compression_score": 0.85,
+    "direction": "LONG",
+    "directional_pressure": 0.9,
+    "directional_volume_score": 0.92,
+    "failed_retest_score": 0.08,
+    "follow_through_score": 0.92,
+    "level_strength": 0.95,
+    "liquidation_burst_share": 0.1,
+    "major_reset": false,
+    "micro_pullback_quality": 0.9,
+    "opposite_rejection_severity": 0.1,
+    "pattern_type": "CONTINUATION",
+    "progress_per_unit_volume": 0.9,
+    "pullback_count": 1,
+    "swing_contraction_score": 0.88,
+    "value_location_score": 0.88
+  },
+  "contract_version": "HM_CRYPTO_V1",
+  "created_at_utc": "2026-09-12T15:00:01Z",
+  "data_quality": "GOOD",
+  "derivatives": {
+    "liquidation_context_score": 0.7,
+    "open_interest_context_score": 0.8
+  },
+  "environment": "DEMO",
+  "event_time_utc": "2026-09-12T15:00:00Z",
+  "exchange": "BYBIT",
+  "feature_versions": {
+    "breakout": "v1",
+    "orderflow": "v1",
+    "structure": "v1",
+    "volume_profile": "v1"
+  },
+  "instrument": {
+    "liquidity_bucket": "HIGH",
+    "quote": "USDT",
+    "session_bucket": "GLOBAL",
+    "type": "LINEAR_PERPETUAL"
+  },
+  "levels": {
+    "breakout_event_id": "break_healthy_continuation_long",
+    "entry_expiry_utc": "2026-09-12T15:00:45Z",
+    "entry_reference": "65000",
+    "entry_zone_high": "65050",
+    "entry_zone_low": "64950",
+    "invalidation_price": "64500",
+    "liquidity_context_score": 0.9,
+    "liquidity_sweep_reclaim": false,
+    "major_structure_event_id": "major_healthy_continuation_long",
+    "max_chase_distance": "120",
+    "obstacle_score": 0.1,
+    "obstacles": [
+      {
+        "price": "67500",
+        "strength": 0.8,
+        "type": "HTF_SWING"
+      }
+    ],
+    "preferred_execution_style": "PASSIVE_WHEN_POSSIBLE",
+    "primary_retest_type": "FVG_50",
+    "reference_level": "64800",
+    "retest_locations": [
+      {
+        "freshness": 0.95,
+        "reliability": 0.95,
+        "root_event": "major_break",
+        "structural_significance": 0.98,
+        "type": "BREAKOUT_LEVEL"
+      },
+      {
+        "freshness": 0.95,
+        "reliability": 0.9,
+        "root_event": "impulse_imbalance",
+        "structural_significance": 0.86,
+        "type": "FVG_50"
+      },
+      {
+        "freshness": 0.9,
+        "reliability": 0.72,
+        "root_event": "retracement_geometry",
+        "structural_significance": 0.7,
+        "type": "FIB_61_8"
+      },
+      {
+        "freshness": 0.95,
+        "reliability": 0.86,
+        "root_event": "value_anchor",
+        "structural_significance": 0.88,
+        "type": "ANCHORED_VWAP"
+      }
+    ],
+    "room_to_first_obstacle": "2500",
+    "target_room_score": 0.95,
+    "trigger_price": "65020"
+  },
+  "market_mode": "DERIVATIVES",
+  "orderbook": {
+    "liquidity_wall_ahead_score": 0.1
+  },
+  "orderflow": {
+    "absorption_score": 0.88,
+    "aggression_without_progress_score": 0.05,
+    "contradiction_score": 0.05,
+    "delta_divergence_score": 0.1,
+    "delta_flip": true,
+    "directional_delta_score": 0.91,
+    "imbalance_score": 0.9,
+    "opposing_failure_score": 0.9,
+    "opposite_absorption_score": 0.05,
+    "pullback_delta_ratio": 0.2,
+    "pullback_volume_ratio": 0.25,
+    "trade_velocity_score": 0.92
+  },
+  "quality_reasons": [],
+  "regime": {
+    "type": "HEALTHY_PULLBACK"
+  },
+  "snapshot_id": "snap_healthy_continuation_long_0001",
+  "source_timestamps": {
+    "derivatives": "2026-09-12T14:59:59Z",
+    "orderbook": "2026-09-12T14:59:59Z",
+    "orderflow": "2026-09-12T14:59:59Z",
+    "structure": "2026-09-12T14:59:59Z",
+    "ticker": "2026-09-12T14:59:59Z",
+    "volume": "2026-09-12T14:59:59Z"
+  },
+  "structure": {
+    "acceptance_inside_prior_range": false,
+    "acceptance_outside_range": true,
+    "alternating_micro_bos": 0.05,
+    "authoritative_conflict": false,
+    "both_side_liquidity_sweeps": 0.05,
+    "candle_overlap_score": 0.08,
+    "countertrend_structure_damage": 0.08,
+    "directional_displacement_restart": true,
+    "directional_efficiency_decay": 0.05,
+    "displacement_score": 0.94,
+    "exhaustion_score": 0.08,
+    "exhaustion_volume_score": 0.15,
+    "expansion_score": 0.92,
+    "extended_impulse_score": 0.2,
+    "extension_decay": 0.05,
+    "failed_countertrend_progress_score": 0.9,
+    "failed_expansion_count": 0,
+    "follow_through_score": 0.94,
+    "htf_context_score": 0.92,
+    "htf_counter_structure_score": 0.05,
+    "htf_reversal_context_score": 0.15,
+    "impulse": {
+      "end_price": "66000",
+      "origin_price": "63000"
+    },
+    "invalidation_modes": [
+      "TICK_OR_EVENT",
+      "N_SECOND_PERSISTENCE",
+      "MICRO_BAR_CLOSE",
+      "ENTRY_TF_CLOSE",
+      "STRUCTURAL_ACCEPTANCE"
+    ],
+    "invalidation_persistence_seconds": 3,
+    "macd_divergence_score": 0.1,
+    "major_bias": "LONG",
+    "major_structure_invalidated": false,
+    "major_structure_quality": 0.94,
+    "micro_bos": true,
+    "micro_choch_main_trend": true,
+    "opposite_displacement_score": 0.15,
+    "opposite_micro_confirmation_score": 0.2,
+    "pullback_depth_ratio": 0.2,
+    "pullback_displacement_ratio": 0.2,
+    "pullback_duration_ratio": 0.25,
+    "pullback_overlap": 0.25,
+    "pullback_velocity_ratio": 0.22,
+    "qualified_impulse_score": 0.95,
+    "reclaim": true,
+    "reengagement_origin": "65000",
+    "repeated_failed_expansion_score": 0.05,
+    "return_inside_prior_range": false,
+    "reversal_direction": "SHORT",
+    "reversal_retest_score": 0.2,
+    "rsi_divergence_score": 0.1,
+    "time_without_progress_score": 0.05,
+    "timing_score": 0.9,
+    "vwap_crossing_score": 0.05
+  },
+  "symbol": "BTCUSDT",
+  "ticker": {
+    "ask": "65000.5",
+    "bid": "64999.5",
+    "last_price": "65000"
+  },
+  "timeframes": {
+    "15m": {
+      "available": true
+    },
+    "1h": {
+      "available": true
+    },
+    "1m": {
+      "available": true
+    },
+    "5m": {
+      "available": true
+    }
+  },
+  "volume_profile": {
+    "horizontal_value_score": 0.05,
+    "poc_migration_score": 0.88,
+    "poc_oscillation_score": 0.05,
+    "poc_stagnation_score": 0.05,
+    "range_midpoint_cross_score": 0.05,
+    "reversal_value_shift_score": 0.15,
+    "value_migration_direction": "LONG",
+    "value_migration_score": 0.92
+  }
+}

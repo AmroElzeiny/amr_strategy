@@ -1,0 +1,41 @@
+{
+  "contract_version": "HM_CRYPTO_V1",
+  "signal_id": "insufficient_spot_balance",
+  "snapshot_id": "snap",
+  "created_at_utc": "2099-01-01T00:00:00Z",
+  "exchange": "BYBIT",
+  "environment": "DEMO",
+  "market_mode": "SPOT",
+  "symbol": "BTCUSDT",
+  "pattern_type": "BREAKOUT",
+  "direction": "LONG",
+  "order_intent": "OPEN",
+  "decision": "ENTER",
+  "thesis_id": "thesis",
+  "attempt_no": 1,
+  "deterministic_confidence": 90,
+  "ai_confidence": 90,
+  "final_confidence": 90,
+  "entry_plan": {
+    "expected_entry": "100"
+  },
+  "invalidation": {
+    "stop_price": "99"
+  },
+  "targets": [
+    {
+      "price": "102"
+    }
+  ],
+  "projected_extension_target": "103",
+  "risk_reward": "2",
+  "penalties": [],
+  "blockers": [],
+  "evidence": [],
+  "ttl_ms": 9999999999999,
+  "config_version": "c1",
+  "strategy_version": "s1",
+  "ai_metadata": {},
+  "fixture_case": "insufficient_spot_balance",
+  "integrity_hash": "c9f8b4785ede95a68b304f745eafefbce99e02a9ae55bc1a10a86821e3b6c385"
+}

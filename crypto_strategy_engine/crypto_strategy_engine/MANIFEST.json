@@ -1,0 +1,525 @@
+{
+  "config_version": "HM_STRATEGY_CONFIG_V1",
+  "contract_schema_sha256": "d8e275f847c12dffea7313d67ea61ba59df59b434952ba3faa0ef310391f9cd7",
+  "contract_version": "HM_CRYPTO_V1",
+  "file_count_excluding_manifest": 102,
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "681382c92ed53d693f81fe67041ba7cc54bdb85f85f41a43b8402e22b5a97af4",
+      "size_bytes": 7405
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "8e5d6208ed24aef0cf39b5c4f9ebded2168a0738b8abd00316a013b2eba05968",
+      "size_bytes": 6381
+    },
+    {
+      "path": "BUILD_REPORT.md",
+      "sha256": "3d679d71bf93729531e082be1fe574dfd2b0fb1b42cead709c40e138ca1eab4e",
+      "size_bytes": 12023
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "a12017f425d5943bba3efa25c72b7b65d8025218537906284a585262ced08472",
+      "size_bytes": 2843
+    },
+    {
+      "path": "ENVIRONMENT.md",
+      "sha256": "900da2f64b19a53bca290303c582255156381e970a3aa774cc84f38f1587420f",
+      "size_bytes": 1895
+    },
+    {
+      "path": "LOOKAHEAD_AUDIT.md",
+      "sha256": "447ea798fa8cfbcf03e2ddea8385bae71e39fd031d8f0831a894c24f60406c20",
+      "size_bytes": 1076
+    },
+    {
+      "path": "README.md",
+      "sha256": "1844dc0efd3d649c0ce7274fab7169bf6a5e35d4b1f18166c1dc0ae280cd8094",
+      "size_bytes": 4699
+    },
+    {
+      "path": "REFERENCE_CONCEPT_MAP.md",
+      "sha256": "9f5b44e774843526374f9fec3563da7eda577414ac340649247e2ec911b3411d",
+      "size_bytes": 5138
+    },
+    {
+      "path": "contracts/schema.json",
+      "sha256": "d8e275f847c12dffea7313d67ea61ba59df59b434952ba3faa0ef310391f9cd7",
+      "size_bytes": 7626
+    },
+    {
+      "path": "dist/crypto_strategy_engine-1.0.0-py3-none-any.whl",
+      "sha256": "70f9423b95f7f590dd8a49aa3fcb235d0fa1df5874473c4d5a1fe538f3a38618",
+      "size_bytes": 74075
+    },
+    {
+      "path": "examples/historical_walkforward_records.json",
+      "sha256": "09c6bfc2e219b9fac8b8cf301dafb3201590bb073d1d94008df03ef5845d3f74",
+      "size_bytes": 673273
+    },
+    {
+      "path": "examples/market_snapshot.json",
+      "sha256": "455c3064a1601aee67ce95959f4fdb36794d7a5b60d401162edad5585cad45c3",
+      "size_bytes": 6306
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "5f7d52b63c115c99ca953b6506bccfef4760c5f5688d332958852a29fd9f4aae",
+      "size_bytes": 920
+    },
+    {
+      "path": "scripts/verify_release.ps1",
+      "sha256": "76796cab9e604bd0ac1d589ac2854f5ac34c15c39952bd192cafb0041ce2cb99",
+      "size_bytes": 148
+    },
+    {
+      "path": "scripts/verify_release.sh",
+      "sha256": "b1801fc5a1e0a85075d3f95ecebc7488e9bb22a070ec5b904470253fc2d1d78d",
+      "size_bytes": 154
+    },
+    {
+      "path": "src/crypto_strategy_engine/__init__.py",
+      "sha256": "a06bb134dc15c6b2b58cf52bf63a28ae1e6bfeef687418cc6462e07d40deddae",
+      "size_bytes": 498
+    },
+    {
+      "path": "src/crypto_strategy_engine/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "size_bytes": 48
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/__init__.py",
+      "sha256": "018aa629546b4c053742fe6a28765e0ecf5033a565057e46f988e1289b13d179",
+      "size_bytes": 223
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/gate/__init__.py",
+      "sha256": "1125e7377b3a933b6cd1a1b0445688ff52ba5ba2214d2d8a662b9a2adf2394df",
+      "size_bytes": 79
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/gate/gate.py",
+      "sha256": "a737515800cd5c84ee2cd2bc22c577c792887005ce8b4e668076d5296c272c57",
+      "size_bytes": 11518
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/integrity/__init__.py",
+      "sha256": "afe3f536d4eed42b7bec54ff59fafb1f0f0b93591b06c78505df928bde9d16ae",
+      "size_bytes": 222
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/integrity/request.py",
+      "sha256": "1c3f49043248a49a4c5318180b2d097fa4ed8a3c1a8dc9a7fcb5a7adbf71bd9b",
+      "size_bytes": 1956
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/providers/__init__.py",
+      "sha256": "f4c92026d24eb75bf8cb9a6721000ddef41a28e0862ac3bb4d7dc477a3d99ebf",
+      "size_bytes": 211
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/providers/http.py",
+      "sha256": "1510aec16a6584227ac599abcb2e4e4c9299c74a10a3dfbae36bb4d46d63f1b6",
+      "size_bytes": 2620
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/providers/openai.py",
+      "sha256": "e59af7a6c535342a99c593200aa385b95e6a9c3319e8eaa0919887e2926f8755",
+      "size_bytes": 2747
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/providers/opencode.py",
+      "sha256": "fd31cda1b276a5f9d1b4fc6cffbf1da02139ed310ff9946226010e8a16f2f8ab",
+      "size_bytes": 5698
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/routing/__init__.py",
+      "sha256": "536b5a46337439b6eb3f8d580d81b7a20842b41e592e18e326b19ef00c93d569",
+      "size_bytes": 131
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/routing/policy.py",
+      "sha256": "0deca4b114bc88053ea61dbd05f1d3511739c9b9eed13973d12972b34d41de51",
+      "size_bytes": 1423
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/schemas/__init__.py",
+      "sha256": "b5034d99a1c0f5ebab51c9c36635d60b2adb763bf3911062b029f5cf4988c129",
+      "size_bytes": 187
+    },
+    {
+      "path": "src/crypto_strategy_engine/ai/schemas/assessment.py",
+      "sha256": "94b9444dc3f542b22bd38b639fca257674762723051c48e016384c4e1821d42d",
+      "size_bytes": 3552
+    },
+    {
+      "path": "src/crypto_strategy_engine/arbitration/__init__.py",
+      "sha256": "ca94402b89a4da643fd51035bd1765adb5cd6a515c8bdd58b982a9dba9765fd4",
+      "size_bytes": 139
+    },
+    {
+      "path": "src/crypto_strategy_engine/arbitration/engine.py",
+      "sha256": "70d177d438e855c388f3760bfb4553038ecf7e28c5db026741374ab43c60dd7e",
+      "size_bytes": 2320
+    },
+    {
+      "path": "src/crypto_strategy_engine/blockers/__init__.py",
+      "sha256": "7f6386376ad2df8bb5ef0cce7876ea11dffe0db666b89aa36024bc8837578a90",
+      "size_bytes": 97
+    },
+    {
+      "path": "src/crypto_strategy_engine/blockers/engine.py",
+      "sha256": "bf2485b00600c66b8bd13a00cf97758a42b92733fc9bc3f4a0aa78071b1de2de",
+      "size_bytes": 3329
+    },
+    {
+      "path": "src/crypto_strategy_engine/calibration/__init__.py",
+      "sha256": "eb8abd61e844c1dc3016162ce522c04f48298b903a10e11c3688a24f1b85d7ae",
+      "size_bytes": 146
+    },
+    {
+      "path": "src/crypto_strategy_engine/calibration/platt.py",
+      "sha256": "c2f374f8d7fd9b957d420373273e748336813f972c62128772d499a269c3d694",
+      "size_bytes": 2685
+    },
+    {
+      "path": "src/crypto_strategy_engine/cli.py",
+      "sha256": "b8856a916d9c483c250ef641d08f2a739697e72dcd84d3168a81482050d06343",
+      "size_bytes": 3882
+    },
+    {
+      "path": "src/crypto_strategy_engine/config/__init__.py",
+      "sha256": "fb2ca4c65c986c9966bed89eba6e7406e6abc4acfb11d549d18e2102500750ed",
+      "size_bytes": 67
+    },
+    {
+      "path": "src/crypto_strategy_engine/config/settings.py",
+      "sha256": "c3b58175bd19163cb8369c8ed068beebb2ad35726254d093842d07c9670a8a78",
+      "size_bytes": 21610
+    },
+    {
+      "path": "src/crypto_strategy_engine/contracts/CONTRACT.md",
+      "sha256": "a12017f425d5943bba3efa25c72b7b65d8025218537906284a585262ced08472",
+      "size_bytes": 2843
+    },
+    {
+      "path": "src/crypto_strategy_engine/contracts/schema.json",
+      "sha256": "d8e275f847c12dffea7313d67ea61ba59df59b434952ba3faa0ef310391f9cd7",
+      "size_bytes": 7626
+    },
+    {
+      "path": "src/crypto_strategy_engine/engine.py",
+      "sha256": "2bf45f3daa4381b116cb634dc8242ed46f4db51225bcc5932718481f45cac3fa",
+      "size_bytes": 22749
+    },
+    {
+      "path": "src/crypto_strategy_engine/evidence/__init__.py",
+      "sha256": "e598671dd38ba34db9a748155917ddc74d9ecb83049f08d702de55b143bd36f4",
+      "size_bytes": 508
+    },
+    {
+      "path": "src/crypto_strategy_engine/evidence/catalog.py",
+      "sha256": "ce89dcbefeebc23f4ddbf8ea61b15980d407bc06f1b333a744944ba1b8ebbe77",
+      "size_bytes": 5972
+    },
+    {
+      "path": "src/crypto_strategy_engine/evidence/risk_scores.py",
+      "sha256": "a9d5e1252492d1e34b9e603340105aa5f43b2398c89306906af06a0b11ce5995",
+      "size_bytes": 4691
+    },
+    {
+      "path": "src/crypto_strategy_engine/memory/__init__.py",
+      "sha256": "5b5fc11bc05eeca94af8ed12fbbfa2554cb52c833d588a8b90393201a39fe2cc",
+      "size_bytes": 330
+    },
+    {
+      "path": "src/crypto_strategy_engine/memory/store.py",
+      "sha256": "dca2e220344c6e80df1404062baf8f324d65ef7764a1f6adbe88ee3a2fadf087",
+      "size_bytes": 15857
+    },
+    {
+      "path": "src/crypto_strategy_engine/models.py",
+      "sha256": "43ba3c66dc48843172c47e48665287e3f89e59cf1544a0fe5a4b1eab46210093",
+      "size_bytes": 4295
+    },
+    {
+      "path": "src/crypto_strategy_engine/observability/__init__.py",
+      "sha256": "d9f2c9922ffe3dec68541de810ba1c1b37ff3f6a634a9ad5e3f5eda96dadbb97",
+      "size_bytes": 74
+    },
+    {
+      "path": "src/crypto_strategy_engine/observability/logging.py",
+      "sha256": "12db665f1a5b944a379660f932893bb4f6bdb40d7f5b448a1716c9d67a2a2fd5",
+      "size_bytes": 738
+    },
+    {
+      "path": "src/crypto_strategy_engine/patterns/__init__.py",
+      "sha256": "c41bfc9aea00c37cc8a8635593874c7f4c7c4f0c33b5539edf6273911fbead4e",
+      "size_bytes": 178
+    },
+    {
+      "path": "src/crypto_strategy_engine/patterns/breakout.py",
+      "sha256": "c4b9f0ca370a87c543fca89b5ac286071e5812e7dfd6306c43f08853216140c0",
+      "size_bytes": 4760
+    },
+    {
+      "path": "src/crypto_strategy_engine/patterns/common.py",
+      "sha256": "95118c1d4841f6c7e286c7b9690ee7758842d23c4b3c4673324b2cb5e4f81ef4",
+      "size_bytes": 3684
+    },
+    {
+      "path": "src/crypto_strategy_engine/patterns/continuation.py",
+      "sha256": "db23dfa5f94f140e94e1da52bff65040177edfcef97011e88bc605c03e4908cd",
+      "size_bytes": 9142
+    },
+    {
+      "path": "src/crypto_strategy_engine/patterns/pre_breakout.py",
+      "sha256": "abb5b64749c4165f4936cbd187fc7a84c685cdf9661884622de5d842c49eb81a",
+      "size_bytes": 3626
+    },
+    {
+      "path": "src/crypto_strategy_engine/patterns/reversal.py",
+      "sha256": "c9455402812d8b118771e944ddaf36177edefc53cdf3d6cc52fdbad3d153453b",
+      "size_bytes": 3910
+    },
+    {
+      "path": "src/crypto_strategy_engine/penalties/__init__.py",
+      "sha256": "4576668eb0b2d02ff746dd60ebc810a05a3bc450e72e280316d4ea51fdca726c",
+      "size_bytes": 152
+    },
+    {
+      "path": "src/crypto_strategy_engine/penalties/catalog.py",
+      "sha256": "36a814530943c8d02debdfc310af06775fbe3a39a708267366767b269c141821",
+      "size_bytes": 6971
+    },
+    {
+      "path": "src/crypto_strategy_engine/persistence/__init__.py",
+      "sha256": "403fa27d07994685745d02111ef94fe95e9ec077fb577da5f2e308eb5515cb1a",
+      "size_bytes": 71
+    },
+    {
+      "path": "src/crypto_strategy_engine/persistence/atomic.py",
+      "sha256": "f6661c8abd7ecf8c53bb6caa5aea131df54f9be41ba3c5de12599f2ae0fb04a7",
+      "size_bytes": 767
+    },
+    {
+      "path": "src/crypto_strategy_engine/research/__init__.py",
+      "sha256": "6c142cfee7ed90256dd89a132ab224acaa5234b33239141c3a08c3559030aeb0",
+      "size_bytes": 458
+    },
+    {
+      "path": "src/crypto_strategy_engine/research/hypotheses.py",
+      "sha256": "0e49fbf8a33be5e76eb07373abd4636a74a814124222ff96f8612172ba9762ad",
+      "size_bytes": 4089
+    },
+    {
+      "path": "src/crypto_strategy_engine/research/repeatability.py",
+      "sha256": "255510994951752e7cac2da66b9bbe41cc6add6feb1d404738237143a7b2fc84",
+      "size_bytes": 1957
+    },
+    {
+      "path": "src/crypto_strategy_engine/scoring/__init__.py",
+      "sha256": "e58b33e7b0e564f5138cbc6a78022354b0f2153bc05a53fed84aafe649916665",
+      "size_bytes": 217
+    },
+    {
+      "path": "src/crypto_strategy_engine/scoring/confidence.py",
+      "sha256": "8a770a420d44cd2216faea7a331bade0d17e11b1b010e0a465f7b6232370d694",
+      "size_bytes": 1224
+    },
+    {
+      "path": "src/crypto_strategy_engine/targets/__init__.py",
+      "sha256": "1f53e617fdfeb5c124063b460e2c6b5b5d1e10687b5db17add95b0c09fdb844d",
+      "size_bytes": 129
+    },
+    {
+      "path": "src/crypto_strategy_engine/targets/engine.py",
+      "sha256": "1641858e89e07f14a6385b8f8bbf7cf420399b2c8cf2a68e0b055087bfe68a09",
+      "size_bytes": 4577
+    },
+    {
+      "path": "src/crypto_strategy_engine/thesis/__init__.py",
+      "sha256": "9084ea6ee89d3e5ccd6d55ab0d49c980ff640aa783ab66e7f75db6829907f0bd",
+      "size_bytes": 124
+    },
+    {
+      "path": "src/crypto_strategy_engine/thesis/state.py",
+      "sha256": "a6acb1435104f2e963385c19c1561569a1c9cb0264f8d98224d2df60292c19bd",
+      "size_bytes": 4382
+    },
+    {
+      "path": "src/crypto_strategy_engine/validation/__init__.py",
+      "sha256": "7875e5387bf0a6ab56b657f34bde239f1e084c84ebe0a3e950691c334c09e6f1",
+      "size_bytes": 161
+    },
+    {
+      "path": "src/crypto_strategy_engine/validation/snapshot.py",
+      "sha256": "d9f16b5932694e75e6b852a594b5b9cfc88be63d14b5bb8bcf91fd3ae628b356",
+      "size_bytes": 6331
+    },
+    {
+      "path": "src/crypto_strategy_engine/walkforward/__init__.py",
+      "sha256": "fb5c80bd9233f41deabc173b71f386f550d853801fd7d46e84e5c1cb1f6ba8db",
+      "size_bytes": 247
+    },
+    {
+      "path": "src/crypto_strategy_engine/walkforward/engine.py",
+      "sha256": "63322f3d4f5e856c6f28df281011f168820e4fca1eef727e25be20f9d1276ba7",
+      "size_bytes": 18548
+    },
+    {
+      "path": "src/crypto_strategy_engine/walkforward/metrics.py",
+      "sha256": "1cd7ce5a53363ce891aa8a8531318610e2587a388a494077e89d4c543d3f3318",
+      "size_bytes": 2956
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "5d12ee9a9d2eb21445e6ca92b6ae41cfa482ca149228c67525da52d85673221f",
+      "size_bytes": 977
+    },
+    {
+      "path": "tests/fixtures/absorption_reengagement.json",
+      "sha256": "fe40479350f2b23a4faab56f391de9dadbd8151ab34b6d0d50078bd62c6749d6",
+      "size_bytes": 6302
+    },
+    {
+      "path": "tests/fixtures/balance_trap.json",
+      "sha256": "cf8d4f24a7d3c7ce5d6778dd133c22b4943166bea66cca70be740c2b0204a3e1",
+      "size_bytes": 6254
+    },
+    {
+      "path": "tests/fixtures/conflicting_orderflow.json",
+      "sha256": "612a6fb99ecaa0fdae47a260a862c9f6753a9b35113cdf91ed6f96913a896c56",
+      "size_bytes": 6293
+    },
+    {
+      "path": "tests/fixtures/degraded_snapshot.json",
+      "sha256": "66551afdacc6966850653b55d0fbec90f4cdba6a815c8b7c351044fb75220a73",
+      "size_bytes": 6313
+    },
+    {
+      "path": "tests/fixtures/exhausted_minor_pullbacks.json",
+      "sha256": "2f6729475ad33d9408422bfc751831437861b0c1c5dc353c54d7a04df9bed505",
+      "size_bytes": 6306
+    },
+    {
+      "path": "tests/fixtures/fake_breakout_long.json",
+      "sha256": "11e6b5f5ebe7a6514160898216fea3554f486c623dbc2f3009252846ffa7c1d3",
+      "size_bytes": 6279
+    },
+    {
+      "path": "tests/fixtures/first_pullback_breakout.json",
+      "sha256": "edaf50e03b7e6f12823219eb75453c14885bd15e2815fcf5ee865b480f9d6029",
+      "size_bytes": 6300
+    },
+    {
+      "path": "tests/fixtures/healthy_continuation_long.json",
+      "sha256": "455c3064a1601aee67ce95959f4fdb36794d7a5b60d401162edad5585cad45c3",
+      "size_bytes": 6306
+    },
+    {
+      "path": "tests/fixtures/healthy_continuation_short.json",
+      "sha256": "3b3e2e9f113da1dcd54893348470e2021c3097cd7fff99b144b90b9c5fe49381",
+      "size_bytes": 6311
+    },
+    {
+      "path": "tests/fixtures/invalid_snapshot.json",
+      "sha256": "26920866b43e805fd515103f96e9fae160623ef159dc875f5acd9c5c4da1fa95",
+      "size_bytes": 6307
+    },
+    {
+      "path": "tests/fixtures/prebreakout_chop.json",
+      "sha256": "bd3e976d0a4f58b56cae0543bfcf4a321a3b5bb5078701a89149e79ff207cd3f",
+      "size_bytes": 6266
+    },
+    {
+      "path": "tests/fixtures/prebreakout_compression.json",
+      "sha256": "0b1b04e65fd8676ce9828233bfb7aa0e1d46f8d5b14f0c887c402e381a24cd10",
+      "size_bytes": 6303
+    },
+    {
+      "path": "tests/fixtures/reversal_false_signal.json",
+      "sha256": "89261748e5c6674fa8a13cd99b329bcaa376d6a33668a4828226149df253452d",
+      "size_bytes": 6289
+    },
+    {
+      "path": "tests/fixtures/reversal_liquidity_sweep.json",
+      "sha256": "015b3dd234bdb4e1ce3fbd584f50775818e11f9013f03050f4ccd0a90852ebaf",
+      "size_bytes": 6300
+    },
+    {
+      "path": "tests/fixtures/second_pullback_breakout.json",
+      "sha256": "a4974c31614a768c3e81cb72e89e4e540d6e6c9c2cb90d031eeb313920f0a333",
+      "size_bytes": 6303
+    },
+    {
+      "path": "tests/fixtures/spot_short.json",
+      "sha256": "b0de6140c608d1c12a2fcb49182149e9e59b7dbfba8e898784eb82bc04e53b42",
+      "size_bytes": 6164
+    },
+    {
+      "path": "tests/fixtures/stale_snapshot.json",
+      "sha256": "4c4c24a4ef60bdf156690c394302e024f43ff72e075fa1bfadd1c6273f1ce95d",
+      "size_bytes": 6305
+    },
+    {
+      "path": "tests/fixtures/strong_counter_pullback.json",
+      "sha256": "9c46d770082865b03811462e96ae3499934950436cd9cd659ff53463cb1a0dce",
+      "size_bytes": 6295
+    },
+    {
+      "path": "tests/fixtures/target_blocked.json",
+      "sha256": "57e66c6eb835d08a59bf08fcfe83f5b2b01546dfecacdb4b370d4cc3d6b85dfe",
+      "size_bytes": 6280
+    },
+    {
+      "path": "tests/fixtures/value_not_migrating.json",
+      "sha256": "57f66924c3b30a2e65336bfc7bfc875ad9bab3c506ba739e00713aece25ae3ef",
+      "size_bytes": 6285
+    },
+    {
+      "path": "tests/test_ai_gate.py",
+      "sha256": "a4a309510ff6b86882e7598a61a4aec6455dbc0de139b66a24833eb122c2bb58",
+      "size_bytes": 7777
+    },
+    {
+      "path": "tests/test_contract_integrity.py",
+      "sha256": "132af29acee52435e77f70182e2aca4ec1d5c498d782040131f3a22ff186078e",
+      "size_bytes": 5303
+    },
+    {
+      "path": "tests/test_memory_walkforward_cli.py",
+      "sha256": "c2bef7a7561f5b6d71922e0435cb5d3298c8ba560886a721e8ff452e74f0f007",
+      "size_bytes": 7856
+    },
+    {
+      "path": "tests/test_patterns_modes_targets.py",
+      "sha256": "b30f655eb2b0ec195d8c214a6e0a74cc1449037ca17ca6f2ff9723754d0a0681",
+      "size_bytes": 5610
+    },
+    {
+      "path": "tests/test_provider_protocols.py",
+      "sha256": "556c33d50bdca9868a7a3346e8207e43ec9c7702c51c45fe525d48ccce5f860f",
+      "size_bytes": 3338
+    },
+    {
+      "path": "tests/test_schema_and_research.py",
+      "sha256": "738bb72651606616d1a460a409e6de0e0c692175edcce892fe7a6737e3fb084a",
+      "size_bytes": 3689
+    },
+    {
+      "path": "tests/test_thesis_penalties_invariants.py",
+      "sha256": "db4f3edd7d57a832d7d7791c35c8d883e2070dd1ec2a89f9becb1d306f96d33f",
+      "size_bytes": 5383
+    }
+  ],
+  "generated_at_utc": "2026-09-12T15:50:00Z",
+  "manifest_self_excluded": true,
+  "package": "crypto_strategy_engine",
+  "package_version": "1.0.0",
+  "reference_repository": "https://github.com/AmroElzeiny/MT5",
+  "reference_revision": "25cca426e8c05bb2737da70a9b1730faf1eb3c12",
+  "strategy_version": "HM_STRATEGY_V1"
+}

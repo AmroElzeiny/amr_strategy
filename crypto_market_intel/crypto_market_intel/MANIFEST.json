@@ -1,0 +1,406 @@
+{
+  "package": "crypto_market_intel",
+  "package_version": "1.0.0",
+  "contract_version": "HM_CRYPTO_V1",
+  "contract_schema_sha256": "dbdcf779916a02cfac97698979f1201ee463d3de38e9bb27139895fe5b47945f",
+  "generated_at_utc": "2026-09-12T15:36:54Z",
+  "reference_repository": "https://github.com/AmroElzeiny/MT5",
+  "reference_commit_observed": "25cca426e8c05bb2737da70a9b1730faf1eb3c12",
+  "live_market_adapter": "BYBIT_V5_PUBLIC",
+  "binance_live_adapter_implemented": false,
+  "trading_authority": false,
+  "test_summary": {
+    "unit_tests_passed": 27,
+    "default_live_tests_skipped": 1,
+    "network_in_unit_tests": false
+  },
+  "manifest_scope": "All package files except MANIFEST.json itself; generated after removal of caches/egg-info.",
+  "file_count": 77,
+  "files": [
+    {
+      "path": ".env.example",
+      "size_bytes": 2516,
+      "sha256": "b9081914ed2488111d48dec161d17cba9dbfb5cae3c560789b0c8cc3386dc4a5"
+    },
+    {
+      "path": "ALGORITHM_POLICY.md",
+      "size_bytes": 1408,
+      "sha256": "ebe7c9d1fe01850d8ce2bc9321f7aa98904f6f1a3ed1f760de6c5777383dabad"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "size_bytes": 4368,
+      "sha256": "3a69762d9adcd840b2dcf090ae8d9cc0037bffb53d4132914900a32f21d13ddc"
+    },
+    {
+      "path": "BUILD_REPORT.md",
+      "size_bytes": 5428,
+      "sha256": "131bcc5eac95920bda29c8fed92e93e6a15d8f136a6436ed5c5afb5423da26ff"
+    },
+    {
+      "path": "CONTRACT.md",
+      "size_bytes": 2009,
+      "sha256": "b854e47e6dd7305c1eee9426cf6c1404dd8978ef1522d57b605d0892b6f1fbb5"
+    },
+    {
+      "path": "ENVIRONMENT.md",
+      "size_bytes": 2344,
+      "sha256": "0e48f276eecb853ff0559480724b72fa19afc18c2f055a61f7fe81b7980dc1b2"
+    },
+    {
+      "path": "PATTERN_DEFINITIONS.md",
+      "size_bytes": 3624,
+      "sha256": "eddb8e94175ae3f96da6d74faaf9f0fb83e7e2ae4f181db1b34ab969d0baeef6"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4550,
+      "sha256": "b7736d906adb162827be3160a7d17763450b8cee9db4697320845510b590eacb"
+    },
+    {
+      "path": "REFERENCE_CONCEPT_MAP.md",
+      "size_bytes": 3653,
+      "sha256": "8fe2aab6e5acfbfe701adb93e161e5efb171d0fe80b6c15a4f2ccf1c620f0560"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/__init__.py",
+      "size_bytes": 196,
+      "sha256": "da780237451bfd2b68b996d8f7298fb8bd2a7e9150cc7e8ba76657ece2d6ee08"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/bars.py",
+      "size_bytes": 1146,
+      "sha256": "02a41aec9584312e9f7cce0f81f8e90271564f248f3fdec92359d642c9746090"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/breakout.py",
+      "size_bytes": 13016,
+      "sha256": "56b07492333bc396b8fe3197c4a444ead6b7a512d8321f9d75bdc87374f035da"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/bybit.py",
+      "size_bytes": 11356,
+      "sha256": "b04b90111e29682665bd1ba631d5367e38ed30abebe36b3938fb78ca015c83ad"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/config.py",
+      "size_bytes": 11706,
+      "sha256": "6ff8a94bab5cf62f7ab8bd1e7375513d229b50c00a4eb5ab686e949811da9e0a"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/contracts/CONTRACT.md",
+      "size_bytes": 2009,
+      "sha256": "b854e47e6dd7305c1eee9426cf6c1404dd8978ef1522d57b605d0892b6f1fbb5"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/contracts/__init__.py",
+      "size_bytes": 597,
+      "sha256": "0e6a5f90ee1c64d98b5fea0b82b30a9bb4076d5ca6d2b0fdc2b458489a8ea8ea"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/contracts/models.py",
+      "size_bytes": 5865,
+      "sha256": "316050973fd6eaf8b83350618729e19e07e3233f1a388d9527f6632dc3484234"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/contracts/schema.json",
+      "size_bytes": 20366,
+      "sha256": "dbdcf779916a02cfac97698979f1201ee463d3de38e9bb27139895fe5b47945f"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/engine.py",
+      "size_bytes": 21027,
+      "sha256": "2d9d6612703fad9c2a8effa52df3bd1d4057bec6416fadb2455da01d74548113"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/ict.py",
+      "size_bytes": 5820,
+      "sha256": "a41aead353c51482424783f5a72946b3a5ea5aae23d85b8bab28eaee3996ee76"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/orderbook.py",
+      "size_bytes": 10395,
+      "sha256": "3f66c4da607455bb2ebb8ef107386827ca164e2266bc1f45c1a67b575dfb3da5"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/quality.py",
+      "size_bytes": 2144,
+      "sha256": "08ec63904cd1eccfaac3e69213c47d2919a4f929b3d03e455f0184a719b67808"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/regime.py",
+      "size_bytes": 5440,
+      "sha256": "a17aa4ac3e5df7e871965738f7242ae155d7364d7d6cacc1faaf685144f9f915"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/scanner.py",
+      "size_bytes": 3016,
+      "sha256": "95133a20858e889a420eba11e677c3f6c8a7fdccac184ebb2a0e2db63ac18505"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/snapshot.py",
+      "size_bytes": 5091,
+      "sha256": "1f7f88eb996159b54ee986160be2323a7a17f8023d0cdb1e7b3333ba36bad5a4"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/storage.py",
+      "size_bytes": 4830,
+      "sha256": "e85edf2e1b725056470cdd1c966df04c9a2e1ac990acf42f277d99291aa21105"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/stream_state.py",
+      "size_bytes": 3794,
+      "sha256": "4a83ef0cccf187d368febc04ee5aec9763ee8b595eea22c1389ad0b9728545e1"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/structure.py",
+      "size_bytes": 17284,
+      "sha256": "fdcbfd407230adb4565ca015a63743b1d0f501650075aa07520b04e25f3a56e3"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/tpo.py",
+      "size_bytes": 2740,
+      "sha256": "af5b28af2a1d14aeec9bf54eaee28b0cb7dcaa245d34345fed8aaa7f9988122d"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/types.py",
+      "size_bytes": 1666,
+      "sha256": "3bf68a6b11f42ae999560a2b611c68d3a03c78ffcbe3527ea3bd46dc86fe3b57"
+    },
+    {
+      "path": "build/lib/crypto_market_intel/volume.py",
+      "size_bytes": 10983,
+      "sha256": "273cc93cc60bce708ae93e160df49d17a807cc9408ce8fa3753a1bb9d8893595"
+    },
+    {
+      "path": "contracts/schema.json",
+      "size_bytes": 20366,
+      "sha256": "dbdcf779916a02cfac97698979f1201ee463d3de38e9bb27139895fe5b47945f"
+    },
+    {
+      "path": "examples/archive_replay.py",
+      "size_bytes": 347,
+      "sha256": "2d62ed883de4e54ddf280f59f7e7ab1d1628ee9fa0a9b1f2ea65ef012074958c"
+    },
+    {
+      "path": "examples/deep_topics.py",
+      "size_bytes": 557,
+      "sha256": "dec31f94a6d65e9117cc9dc6b058ca5a05eb1a557a1404683563341a9193d7de"
+    },
+    {
+      "path": "examples/scan_once.py",
+      "size_bytes": 769,
+      "sha256": "bf32c30acffaaffb74157fb8a2170a06b39215672fe00165cf2d1608ad9bbb91"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 1071,
+      "sha256": "2b7851b9e1e3d4c3c879441d6c1a1af2a38b2f2f845f079b35339ff958786419"
+    },
+    {
+      "path": "src/crypto_market_intel/__init__.py",
+      "size_bytes": 196,
+      "sha256": "da780237451bfd2b68b996d8f7298fb8bd2a7e9150cc7e8ba76657ece2d6ee08"
+    },
+    {
+      "path": "src/crypto_market_intel/bars.py",
+      "size_bytes": 1146,
+      "sha256": "02a41aec9584312e9f7cce0f81f8e90271564f248f3fdec92359d642c9746090"
+    },
+    {
+      "path": "src/crypto_market_intel/breakout.py",
+      "size_bytes": 13016,
+      "sha256": "1dc64dc9fb2f16613779efb0f1ed2d00e58ff12d2fff018dfa03dd4ed2e00824"
+    },
+    {
+      "path": "src/crypto_market_intel/bybit.py",
+      "size_bytes": 11356,
+      "sha256": "b04b90111e29682665bd1ba631d5367e38ed30abebe36b3938fb78ca015c83ad"
+    },
+    {
+      "path": "src/crypto_market_intel/config.py",
+      "size_bytes": 11706,
+      "sha256": "6ff8a94bab5cf62f7ab8bd1e7375513d229b50c00a4eb5ab686e949811da9e0a"
+    },
+    {
+      "path": "src/crypto_market_intel/contracts/CONTRACT.md",
+      "size_bytes": 2009,
+      "sha256": "b854e47e6dd7305c1eee9426cf6c1404dd8978ef1522d57b605d0892b6f1fbb5"
+    },
+    {
+      "path": "src/crypto_market_intel/contracts/__init__.py",
+      "size_bytes": 597,
+      "sha256": "0e6a5f90ee1c64d98b5fea0b82b30a9bb4076d5ca6d2b0fdc2b458489a8ea8ea"
+    },
+    {
+      "path": "src/crypto_market_intel/contracts/models.py",
+      "size_bytes": 5865,
+      "sha256": "316050973fd6eaf8b83350618729e19e07e3233f1a388d9527f6632dc3484234"
+    },
+    {
+      "path": "src/crypto_market_intel/contracts/schema.json",
+      "size_bytes": 20366,
+      "sha256": "dbdcf779916a02cfac97698979f1201ee463d3de38e9bb27139895fe5b47945f"
+    },
+    {
+      "path": "src/crypto_market_intel/engine.py",
+      "size_bytes": 21027,
+      "sha256": "2d9d6612703fad9c2a8effa52df3bd1d4057bec6416fadb2455da01d74548113"
+    },
+    {
+      "path": "src/crypto_market_intel/ict.py",
+      "size_bytes": 5820,
+      "sha256": "a41aead353c51482424783f5a72946b3a5ea5aae23d85b8bab28eaee3996ee76"
+    },
+    {
+      "path": "src/crypto_market_intel/orderbook.py",
+      "size_bytes": 10395,
+      "sha256": "3f66c4da607455bb2ebb8ef107386827ca164e2266bc1f45c1a67b575dfb3da5"
+    },
+    {
+      "path": "src/crypto_market_intel/quality.py",
+      "size_bytes": 2144,
+      "sha256": "08ec63904cd1eccfaac3e69213c47d2919a4f929b3d03e455f0184a719b67808"
+    },
+    {
+      "path": "src/crypto_market_intel/regime.py",
+      "size_bytes": 5440,
+      "sha256": "a17aa4ac3e5df7e871965738f7242ae155d7364d7d6cacc1faaf685144f9f915"
+    },
+    {
+      "path": "src/crypto_market_intel/scanner.py",
+      "size_bytes": 3016,
+      "sha256": "95133a20858e889a420eba11e677c3f6c8a7fdccac184ebb2a0e2db63ac18505"
+    },
+    {
+      "path": "src/crypto_market_intel/snapshot.py",
+      "size_bytes": 5276,
+      "sha256": "fba25a7206cde77bc455ffdf9a4f93214a34e80d1425e34fbc0c5fa003f27f17"
+    },
+    {
+      "path": "src/crypto_market_intel/storage.py",
+      "size_bytes": 4830,
+      "sha256": "e85edf2e1b725056470cdd1c966df04c9a2e1ac990acf42f277d99291aa21105"
+    },
+    {
+      "path": "src/crypto_market_intel/stream_state.py",
+      "size_bytes": 3794,
+      "sha256": "4a83ef0cccf187d368febc04ee5aec9763ee8b595eea22c1389ad0b9728545e1"
+    },
+    {
+      "path": "src/crypto_market_intel/structure.py",
+      "size_bytes": 17284,
+      "sha256": "fdcbfd407230adb4565ca015a63743b1d0f501650075aa07520b04e25f3a56e3"
+    },
+    {
+      "path": "src/crypto_market_intel/tpo.py",
+      "size_bytes": 2740,
+      "sha256": "af5b28af2a1d14aeec9bf54eaee28b0cb7dcaa245d34345fed8aaa7f9988122d"
+    },
+    {
+      "path": "src/crypto_market_intel/types.py",
+      "size_bytes": 1666,
+      "sha256": "3bf68a6b11f42ae999560a2b611c68d3a03c78ffcbe3527ea3bd46dc86fe3b57"
+    },
+    {
+      "path": "src/crypto_market_intel/volume.py",
+      "size_bytes": 10983,
+      "sha256": "273cc93cc60bce708ae93e160df49d17a807cc9408ce8fa3753a1bb9d8893595"
+    },
+    {
+      "path": "tests/conftest.py",
+      "size_bytes": 1685,
+      "sha256": "71d6b2a00219fcf4e36c64689e3395ba6e852765a7098452f43cebf5ce0430a6"
+    },
+    {
+      "path": "tests/test_breakout.py",
+      "size_bytes": 1744,
+      "sha256": "b1b809504ca038f04553456490c4d9222daff0ad2cf656ccb3e1e396b93641e6"
+    },
+    {
+      "path": "tests/test_bybit_adapter.py",
+      "size_bytes": 1594,
+      "sha256": "73b9c332f1d658557b32941eb56f4e117ee5d7118d8f2ac06c8c4cb20760e31e"
+    },
+    {
+      "path": "tests/test_failure_paths.py",
+      "size_bytes": 963,
+      "sha256": "8ef3ff90d9726b53db7157d5b5a2f8f8b04661177f7dffce14ba620f6caa5d73"
+    },
+    {
+      "path": "tests/test_live_smoke.py",
+      "size_bytes": 584,
+      "sha256": "936c0caab486dd8c20a48b062713d10b9869530f3d4d3610b4eb335bf2202638"
+    },
+    {
+      "path": "tests/test_orderbook.py",
+      "size_bytes": 1759,
+      "sha256": "6aac0974204e3ea8be00a423f168c7c65156a92090c57a9bb09823f6db701f08"
+    },
+    {
+      "path": "tests/test_orderflow_profile.py",
+      "size_bytes": 1625,
+      "sha256": "e01f433e27953bd14e15d433e16f4f41090207fdc2864f79e4876b03d619ba9b"
+    },
+    {
+      "path": "tests/test_regime_quality.py",
+      "size_bytes": 1915,
+      "sha256": "5fa4a0867526c3fd5b21602eef3e30b423ba14f99d6c356c1e99e36bf44099a1"
+    },
+    {
+      "path": "tests/test_restart_and_scope.py",
+      "size_bytes": 1304,
+      "sha256": "919318666de31c0653966c88bf9337b1f077b32971bbe6d3ed29ecc0c0b8898b"
+    },
+    {
+      "path": "tests/test_scanner.py",
+      "size_bytes": 848,
+      "sha256": "c13d3ba864dc48d690a3fc26ca3fb5f68e398a84863acbe2120917d8e5e8e928"
+    },
+    {
+      "path": "tests/test_schema.py",
+      "size_bytes": 1814,
+      "sha256": "c2ef48dbbffa3be00efd387d53cb9bcf118297207cd26fb225de6b2e779152d1"
+    },
+    {
+      "path": "tests/test_storage.py",
+      "size_bytes": 673,
+      "sha256": "44711cac375486a6eacf8928d443f0c6ec9195a615b013839ff49d38c1dfda0e"
+    },
+    {
+      "path": "tests/test_stream_state.py",
+      "size_bytes": 2129,
+      "sha256": "069d367e5dd430e5b3e5dab5e384ca10b36ac920cb6d4cf8a71598c1c52ba8fc"
+    },
+    {
+      "path": "tests/test_structure_ict.py",
+      "size_bytes": 1481,
+      "sha256": "1cb069df8b70b0d13a4c46143adb5c9982fdfe4082f9862affa12959eb3a9424"
+    },
+    {
+      "path": "tools/build_schema.py",
+      "size_bytes": 1281,
+      "sha256": "8c15e238779118fa22b349937afe13b79ea0994b872551e9e66233dffc404e05"
+    },
+    {
+      "path": "tools/dependency_boundary_check.py",
+      "size_bytes": 1283,
+      "sha256": "c4b8ebbef9ed7269d2f11887887e21061d066e5de9733b54dfd9d5ab10be4cf7"
+    },
+    {
+      "path": "tools/lint_check.py",
+      "size_bytes": 1332,
+      "sha256": "45edb8e3fa4d96aafb5a0df8aa197524c2fde40ba92e200d1d489a91d575b9a8"
+    },
+    {
+      "path": "tools/secret_scan.py",
+      "size_bytes": 1016,
+      "sha256": "2f463113314a7d1c4e5fcbd7bc9d169f10b0083f334dd2c588efaa8549501b02"
+    },
+    {
+      "path": "tools/type_contract_check.py",
+      "size_bytes": 1038,
+      "sha256": "559fb1cc34acb1ab6ff0f111e9778c13e012c162b23f1c0a7e139ed2faf85c84"
+    }
+  ]
+}

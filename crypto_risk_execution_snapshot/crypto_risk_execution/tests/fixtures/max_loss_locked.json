@@ -1,0 +1,41 @@
+{
+  "contract_version": "HM_CRYPTO_V1",
+  "signal_id": "max_loss_locked",
+  "snapshot_id": "snap",
+  "created_at_utc": "2099-01-01T00:00:00Z",
+  "exchange": "BYBIT",
+  "environment": "DEMO",
+  "market_mode": "DERIVATIVES",
+  "symbol": "BTCUSDT",
+  "pattern_type": "BREAKOUT",
+  "direction": "LONG",
+  "order_intent": "OPEN",
+  "decision": "ENTER",
+  "thesis_id": "thesis",
+  "attempt_no": 1,
+  "deterministic_confidence": 90,
+  "ai_confidence": 90,
+  "final_confidence": 90,
+  "entry_plan": {
+    "expected_entry": "100"
+  },
+  "invalidation": {
+    "stop_price": "99"
+  },
+  "targets": [
+    {
+      "price": "102"
+    }
+  ],
+  "projected_extension_target": "103",
+  "risk_reward": "2",
+  "penalties": [],
+  "blockers": [],
+  "evidence": [],
+  "ttl_ms": 9999999999999,
+  "config_version": "c1",
+  "strategy_version": "s1",
+  "ai_metadata": {},
+  "fixture_case": "max_loss_locked",
+  "integrity_hash": "63d4362e3823bd061b638032993316220e88c9f2e4bd30c8ce4d4effe6eac0b1"
+}
