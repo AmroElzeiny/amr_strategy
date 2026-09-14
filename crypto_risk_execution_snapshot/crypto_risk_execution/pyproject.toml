@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "crypto-risk-execution"
-version = "0.3.0-snapshot"
+version = "0.3.0.dev0"
 description = "Standalone deterministic crypto risk, execution and position-safety package"
 requires-python = ">=3.11"
 dependencies = []
@@ -17,6 +17,9 @@ crypto-risk-execution = "crypto_risk_execution.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+crypto_risk_execution = ["contracts/schema.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

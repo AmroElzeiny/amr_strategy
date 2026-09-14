@@ -1,0 +1,3 @@
+from .assessment import AI_ASSESSMENT_JSON_SCHEMA, AI_ASSESSMENT_SCHEMA_VERSION, validate_shape
+
+__all__ = ["AI_ASSESSMENT_JSON_SCHEMA", "AI_ASSESSMENT_SCHEMA_VERSION", "validate_shape"]

@@ -1,0 +1,26 @@
+You are Claude Code, architect and final judge.
+
+Run a read-only smoke test of the amr_strategy dual orchestration system.
+
+Do not modify product code.
+Do not perform authenticated exchange mutation.
+
+Create `.amr-orchestrator/current/MISSION.md` with:
+
+R1: prove repository instructions and git baseline are readable.
+R2: prove Standard delegation to OpenCode works.
+R3: prove the supervisor can use one cheap read-only subagent when useful.
+R4: prove one independent reviewer can verify a material claim.
+R5: produce valid JSON and Markdown reports.
+R6: prove PROGRESS.json updates.
+R7: make zero product-code changes.
+R8: record actual model IDs and duration.
+R9: correctly identify the three package authority boundaries.
+
+Use:
+- FrontEnd Claude
+- Tier Standard
+- ExecutionMode Offline
+
+Do not bypass hooks.
+After completion independently review the final evidence and diff.

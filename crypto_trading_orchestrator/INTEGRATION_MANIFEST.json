@@ -1,0 +1,54 @@
+{
+  "orchestrator_version": "1.0.0",
+  "orchestrator_contract": "HM_ORCHESTRATOR_V1",
+  "contract_version": "HM_CRYPTO_V1",
+  "orchestrator_source_hash": "efd45ef2f81c24a455aaf84b4a499cd8d469a9233da34306071cb77bcaacd285",
+  "master_default_config_hash": "ce65d53566ee4154f2e793054f51b51f111f518f22792576ea9648b9005d627c",
+  "runtime": {
+    "mode": "LIVE",
+    "exchange": "BYBIT",
+    "environment": "DEMO",
+    "market_mode": "DERIVATIVES",
+    "execution_enabled": false,
+    "real_trading_enabled": false,
+    "dry_run": true
+  },
+  "packages": {
+    "market": {
+      "distribution": "crypto-market-intel",
+      "version": "1.0.0",
+      "schema_hash": "dbdcf779916a02cfac97698979f1201ee463d3de38e9bb27139895fe5b47945f",
+      "build_hash": "125d4f6153743204264d204822eab588f70277468e33f9a578a0b9a13901d2fd"
+    },
+    "strategy": {
+      "distribution": "crypto-strategy-engine",
+      "version": "1.0.0",
+      "schema_hash": "408b13714bd831ad2527801ef435d38681551e3b3ffee5eb7b1c96be579935e1",
+      "build_hash": "2abe0f63976507502472c6c00417b50f4ba67805c11f7f9d6d04d66fc030ef7f"
+    },
+    "risk": {
+      "distribution": "crypto-risk-execution",
+      "version": "0.3.0.dev0",
+      "schema_hash": "7dc9bf3c2753d77c08345d8d5121b4ea864b42109373c070e0214771e051d92b",
+      "build_hash": "07ffa664c4189ffdcb3c783ff0f1160611bb14c2276fd684a60d32086e7cf28a"
+    }
+  },
+  "compatibility_adapters": [
+    "package1_list_levels_to_package2_strategy_internal_evidence",
+    "package2_zero_attempt_to_package3_validation",
+    "package2_entry_reference_to_package3_risk_entry",
+    "package3_execution_report_to_dict_transport"
+  ],
+  "wheels": {
+    "crypto_market_intel-1.0.0-py3-none-any.whl": "d53889120f50b9d1abe10f93ebbc23e75caa113ed5082a3b04ebe4a8f0a7b175",
+    "crypto_strategy_engine-1.0.0-py3-none-any.whl": "b5e4e545d9b5653a5d49879b690fb2d0b84c706d93e8264f9f410918f206eb95",
+    "crypto_risk_execution-0.3.0.dev0-py3-none-any.whl": "09a874f703599c23474b81d001312474f524e3e0116d09b76af5f8ec37779f31",
+    "crypto_trading_orchestrator-1.0.0-py3-none-any.whl": "71c1215d6c8685f109e4a0d9f3dc6c0af024feca40cb139294da19ebcc2097bd"
+  },
+  "original_input_zips": {
+    "crypto_market_intel.zip": "de0aa98428f9332038736aa746cb5df23337cb09eaea224996e5360d975acdeb",
+    "crypto_strategy_engine.zip": "fd76d9f0220e40334f8edd6d49f49187de32a87a51e3c8ad90d63044dd5fdc36",
+    "crypto_risk_execution_snapshot.zip": "f87bd065c52de2771df1ff58e91f8598224680b30ce35b9161c3d9298cfb8fe0"
+  },
+  "generated_at_utc": "2026-09-14T19:00:57Z"
+}

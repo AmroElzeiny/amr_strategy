@@ -1,0 +1,18 @@
+{
+  "contract_version": "HM_CRYPTO_V1",
+  "market": {
+    "version": "1.0.0",
+    "schema_hash": "dbdcf779916a02cfac97698979f1201ee463d3de38e9bb27139895fe5b47945f",
+    "build_hash": "125d4f6153743204264d204822eab588f70277468e33f9a578a0b9a13901d2fd"
+  },
+  "strategy": {
+    "version": "1.0.0",
+    "schema_hash": "408b13714bd831ad2527801ef435d38681551e3b3ffee5eb7b1c96be579935e1",
+    "build_hash": "2abe0f63976507502472c6c00417b50f4ba67805c11f7f9d6d04d66fc030ef7f"
+  },
+  "risk": {
+    "version": "0.3.0.dev0",
+    "schema_hash": "7dc9bf3c2753d77c08345d8d5121b4ea864b42109373c070e0214771e051d92b",
+    "build_hash": "07ffa664c4189ffdcb3c783ff0f1160611bb14c2276fd684a60d32086e7cf28a"
+  }
+}

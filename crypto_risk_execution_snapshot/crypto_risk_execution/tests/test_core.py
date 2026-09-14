@@ -12,6 +12,8 @@ def intent():
     x['integrity_hash']=intent_hash(x); return x
 
 def test_contract_integrity_valid(): assert validate_trade_intent(intent())[0]
+def test_strategy_entry_reference_and_zero_attempt_are_accepted():
+    x=intent(); x['attempt_no']=0; x['entry_plan']={'entry_reference':'100','trigger_price_if_any':'101'}; x['integrity_hash']=intent_hash(x); assert validate_trade_intent(x)[0]
 def test_bad_hash_rejected():
     x=intent(); x['integrity_hash']='0'*64; assert 'INTENT_INTEGRITY_FAILURE' in validate_trade_intent(x)[1]
 def test_spot_short_rejected():

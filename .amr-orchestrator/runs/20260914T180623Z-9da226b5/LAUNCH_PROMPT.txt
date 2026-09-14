@@ -1,0 +1,35 @@
+RUN_ID: 20260914T180623Z-9da226b5
+RUN_DIR: .amr-orchestrator/runs/20260914T180623Z-9da226b5
+FRONT_END: Codex
+TIER: Deep
+EXECUTION_MODE: Offline
+TARGET_WALL_CLOCK_MINUTES: 180
+TARGET_MATERIAL_MODEL_INVOCATIONS: 12
+
+Execute the attached mission under repository/orchestration policy.
+
+Read:
+- CLAUDE.md
+- AGENTS.md
+- .amr-orchestrator/policy/REPO_AUTHORITY.md
+- .amr-orchestrator/policy/EXCHANGE_SAFETY.md
+- .amr-orchestrator/policy/ROUTING_POLICY.md
+- .amr-orchestrator/policy/BUDGET_POLICY.md
+- .amr-orchestrator/policy/SUPERVISOR_REPORT_CONTRACT.md
+- .amr-orchestrator/models/ROLE_MODEL_MAP.md
+- .amr-orchestrator/models/LIVE_MODELS.md
+- .amr-orchestrator/models/LIVE_MODELS_VERBOSE.txt
+
+Respect package boundaries.
+Use the normal low-cost model set only.
+Update PROGRESS.json at material handoffs.
+Do not exceed the mission budget to avoid escalation.
+Offline means zero authenticated exchange mutation.
+Real-money/mainnet mutation is never allowed.
+
+Required final evidence:
+- .amr-orchestrator/runs/20260914T180623Z-9da226b5/SUPERVISOR_REPORT.json
+- .amr-orchestrator/runs/20260914T180623Z-9da226b5/SUPERVISOR_REPORT.md
+
+If front-end help is required:
+- .amr-orchestrator/runs/20260914T180623Z-9da226b5/ESCALATION.json

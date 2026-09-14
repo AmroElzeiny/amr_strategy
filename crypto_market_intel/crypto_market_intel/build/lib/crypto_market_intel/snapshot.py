@@ -31,12 +31,17 @@ def assemble_snapshot(*, symbol: str, environment: TradingEnvironment, market_mo
         if forbidden_non_null:
             raise ValueError("spot_snapshot_cannot_fabricate_derivatives_context")
     now = datetime.now(timezone.utc)
+    snapshot_id = make_snapshot_id(symbol, event_time)
+    alert_payload = None
+    if breakout_alert is not None:
+        alert_payload = dict(breakout_alert)
+        alert_payload["snapshot_id"] = snapshot_id
     return MarketSnapshot(
-        contract_version="HM_CRYPTO_V1", snapshot_id=make_snapshot_id(symbol, event_time), created_at_utc=now, event_time_utc=event_time,
+        contract_version="HM_CRYPTO_V1", snapshot_id=snapshot_id, created_at_utc=now, event_time_utc=event_time,
         exchange=Exchange.BYBIT, environment=environment, market_mode=market_mode, symbol=symbol,
         instrument=instrument, ticker=ticker, timeframes=timeframes, structure=structure, levels=levels,
         volume_profile=volume_profile, orderflow=orderflow, orderbook=orderbook, derivatives=derivatives,
-        regime=regime, breakout_alert=breakout_alert, data_quality=data_quality, quality_reasons=quality_reasons,
+        regime=regime, breakout_alert=alert_payload, data_quality=data_quality, quality_reasons=quality_reasons,
         feature_versions=FEATURE_VERSIONS.copy(), source_timestamps=source_timestamps,
     )
 

@@ -1,0 +1,9 @@
+crypto-market-intel==1.0.0
+crypto-strategy-engine==1.0.0
+crypto-risk-execution==0.3.0.dev0
+
+[dev]
+pytest>=8
+ruff>=0.6
+mypy>=1.11
+jsonschema>=4.20

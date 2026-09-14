@@ -1,0 +1,13 @@
+{
+    "completed_work_packages":  [
+
+                                ],
+    "active_role":  "supervisor",
+    "material_model_invocations":  0,
+    "current_action":  "Starting delegated run",
+    "updated_at_utc":  "2026-09-14T18:06:23.6230888Z",
+    "run_id":  "20260914T180623Z-9da226b5",
+    "status":  "starting",
+    "active_model":  "",
+    "current_work_package":  ""
+}

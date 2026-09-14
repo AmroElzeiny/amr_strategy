@@ -1,0 +1,46 @@
+Audit the current `amr_strategy` repository without modifying product code.
+
+Use:
+- Tier Standard unless executable evidence justifies Deep.
+- ExecutionMode Offline.
+
+Build an evidence-backed authority map for:
+
+1. `crypto_market_intel`
+   - public REST/WebSocket ownership;
+   - MarketSnapshot production;
+   - freshness/data-quality/replay;
+   - contract/schema copies;
+   - any accidental trading authority.
+
+2. `crypto_strategy_engine`
+   - MarketSnapshot validation;
+   - strategy-family arbitration;
+   - AI advisory boundary;
+   - TradeIntent authority;
+   - persistence/research/lookahead controls;
+   - any accidental exchange/risk execution authority.
+
+3. `crypto_risk_execution_snapshot`
+   - TradeIntent validation;
+   - sizing/risk locks/reservations;
+   - exchange adapters;
+   - order lifecycle/reconciliation;
+   - persistent state/crash recovery;
+   - Demo/mainnet separation;
+   - known unqualified items from SNAPSHOT_STATUS.md.
+
+4. Cross-package
+   - frozen contract identity/hash/schema parity;
+   - producer/consumer compatibility;
+   - duplicated authority;
+   - ZIP artifact vs directory authority;
+   - test surfaces;
+   - build/package boundaries;
+   - stale/dead/unreachable code if provable.
+
+Do not claim the risk/execution snapshot is release-qualified.
+Do not call private exchange endpoints.
+Do not place/cancel/amend/flatten any order.
+
+Return a compact prioritized diagnosis and a future implementation plan.

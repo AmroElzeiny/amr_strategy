@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: crypto-strategy-engine
+Version: 1.0.0
+Summary: Standalone deterministic crypto strategy authority with advisory AI gate and walk-forward research
+Requires-Python: >=3.11
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+Requires-Dist: mypy>=1.11; extra == "dev"
+Requires-Dist: jsonschema>=4.20; extra == "dev"

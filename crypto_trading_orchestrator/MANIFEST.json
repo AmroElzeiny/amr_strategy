@@ -1,0 +1,262 @@
+{
+    "package":  "crypto_trading_orchestrator",
+    "package_version":  "1.0.0",
+    "orchestrator_version":  "HM_ORCHESTRATOR_V1",
+    "contract_version":  "HM_CRYPTO_V1",
+    "source_build_sha256":  "efd45ef2f81c24a455aaf84b4a499cd8d469a9233da34306071cb77bcaacd285",
+    "manifest_self_excluded":  true,
+    "file_count_excluding_manifest":  50,
+    "generated_at_utc":  "2026-09-14T19:14:11Z",
+    "files":  [
+                  {
+                      "path":  ".env.example",
+                      "sha256":  "6e9418ea9f82d12310100ad16db4122f538f84b54d44e6821a1a7a674376e4e1",
+                      "size_bytes":  2784
+                  },
+                  {
+                      "path":  "ARCHITECTURE.md",
+                      "sha256":  "ca75e6aa1c67394cdd5bf9bcb7333895b037438980d9a470feae6c5f6cf0f4bf",
+                      "size_bytes":  2194
+                  },
+                  {
+                      "path":  "BUILD_REPORT.md",
+                      "sha256":  "4ac9666cf2ecf3c922a53a931aaecc76ae2f51c306e3a9e7128894fe481ef854",
+                      "size_bytes":  3869
+                  },
+                  {
+                      "path":  "CONTRACT.md",
+                      "sha256":  "8b552e812caa8ae1d472f813a7ad162909989b76e34b1220bf500eba52064693",
+                      "size_bytes":  1058
+                  },
+                  {
+                      "path":  "CONTRACT_COMPATIBILITY_REPORT.md",
+                      "sha256":  "32297d6f53ce26177a3f7437d7249e83c00d13c28737398e043ee9319a542e67",
+                      "size_bytes":  1213
+                  },
+                  {
+                      "path":  "ENVIRONMENT.md",
+                      "sha256":  "322b9d48c505066674c20e3f1675cda3461890ab34c1cae1f9d94d803720544f",
+                      "size_bytes":  1379
+                  },
+                  {
+                      "path":  "examples/offline.env",
+                      "sha256":  "6d41bc0f5affde485fb78fe2e9aaf7eef8621e981e5441fabff5c23df565ad82",
+                      "size_bytes":  234
+                  },
+                  {
+                      "path":  "INTEGRATION_MANIFEST.json",
+                      "sha256":  "9d93c8ad023cb8be8db77fd05a934fdbe567a27b8c43c0d0873a8559fda4a19c",
+                      "size_bytes":  2531
+                  },
+                  {
+                      "path":  "INTEGRATION_RECONNAISSANCE.md",
+                      "sha256":  "d8aa34ceedc86d851262175e3f49f80a2912daa22e2532c4cae333d766239774",
+                      "size_bytes":  1669
+                  },
+                  {
+                      "path":  "PACKAGE_BASELINE.json",
+                      "sha256":  "9f91d7f4a276743c42e58ea476027dff2aae53bb5842f8245ba963dba7703df3",
+                      "size_bytes":  691
+                  },
+                  {
+                      "path":  "pyproject.toml",
+                      "sha256":  "40e251ae9c87beabd4b6c7d5c3a0b7d5190cbe5c39fe0760ad73d4e23e8b7db5",
+                      "size_bytes":  1014
+                  },
+                  {
+                      "path":  "README.md",
+                      "sha256":  "c5fd1186ba66458483e7a262ec99c15486336bb17fbd1de4f2cd4ddd7ee36b83",
+                      "size_bytes":  4707
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/__init__.py",
+                      "sha256":  "10d8ef6337feeab65aaa0e3b46c006e8e583ca96fe03c9af2bb1feaf42348795",
+                      "size_bytes":  533
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/__main__.py",
+                      "sha256":  "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+                      "size_bytes":  48
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/adapters/__init__.py",
+                      "sha256":  "6f46e7444cb0c99f798db1a70e45b7d3345921628e05df9186da6c1b19da1ea7",
+                      "size_bytes":  209
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/adapters/market_intel.py",
+                      "sha256":  "042cedfa249082f179d23adfb020145a8b42e25b5f5c91eb92e577d7f5618417",
+                      "size_bytes":  1256
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/adapters/risk_execution.py",
+                      "sha256":  "7ed8bd9f82e41b103c86682994c354979ece91dd12b943440f58d36813e5be06",
+                      "size_bytes":  2684
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/adapters/strategy.py",
+                      "sha256":  "80667945127ce4fc98bd158e6e79c63d7ebe980a7eb796c6b350802a3f825447",
+                      "size_bytes":  1960
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/canonical.py",
+                      "sha256":  "4fbcb95eaf7a818d936122de3dca2064244e68b291f2258f441258d7252ed965",
+                      "size_bytes":  2630
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/cli.py",
+                      "sha256":  "a1a04bcd666b9beaaf14ddb6e0c906f754e5935f3fb804c97be572daf47c0c74",
+                      "size_bytes":  7828
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/compatibility/__init__.py",
+                      "sha256":  "aa0a1f247232ccc84f061f00a67e2935b4af7572103f32f3053a37161b719cee",
+                      "size_bytes":  157
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/compatibility/checks.py",
+                      "sha256":  "c2a95a791174e8a12ede5db5bb9e77e7b033287b3f0f58394904437551a43679",
+                      "size_bytes":  2342
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/config.py",
+                      "sha256":  "15f3ade4de1ed1bfc8a1e0afa7e3e11b865a58d8a81d87b388f17021a103f8ec",
+                      "size_bytes":  9244
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/contracts/__init__.py",
+                      "sha256":  "359d8266c054f985e361846d812da4302ed730a97542310cc6b578f667cde55a",
+                      "size_bytes":  134
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/discovery.py",
+                      "sha256":  "7e1dc351c2b4caf1059f1cea985b19b4f996010853f7afb8c1623446f56d5685",
+                      "size_bytes":  4259
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/events/__init__.py",
+                      "sha256":  "69479193b789e348f8c49375e514b6936fd7fdf02698fd18766ed2fa796e872c",
+                      "size_bytes":  99
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/events/core.py",
+                      "sha256":  "adc267649b457fc34feccda3ebe3a9d181872dae157194729b7dbda915d6b5de",
+                      "size_bytes":  4109
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/feedback/__init__.py",
+                      "sha256":  "79cabd2f5ce2cf3f5c9164cc65f71239ac72149bc48aa1aa8281706c55bcebfd",
+                      "size_bytes":  412
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/health/__init__.py",
+                      "sha256":  "70a9d27b6155c8c301045c0bf02db3f4d7c74520a7c9ec0472b694f34feabd59",
+                      "size_bytes":  542
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/lineage/__init__.py",
+                      "sha256":  "2572c98c0a0ff5252af6404fe17ee1cb91b0641a67e155a3ae960ea34623e22a",
+                      "size_bytes":  367
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/models.py",
+                      "sha256":  "e7b47d1752ad1830f0dda5fb182a031a82769a583876144a9aa54547becccd52",
+                      "size_bytes":  4031
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/observability/__init__.py",
+                      "sha256":  "21e228afb145ecaa03a1fe8e8a593c75ceaa9f4fc8ee8d4a31019ba6faeba9bf",
+                      "size_bytes":  311
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/persistence/__init__.py",
+                      "sha256":  "38d7af646ef5a1dc3944a5d4badd7743491c94ff99cd26e56ccbf870ac6e6a03",
+                      "size_bytes":  70
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/persistence/store.py",
+                      "sha256":  "7bf398fa7f52c7efab22c3795d7e52e19ea56c7cabe2dbcf63f10d169d3215d9",
+                      "size_bytes":  9968
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/routing/__init__.py",
+                      "sha256":  "efb4aa11b6c110215ea59239e66c0886bc88723c1c1959ffb20bb4200cda6f69",
+                      "size_bytes":  178
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/runtime/__init__.py",
+                      "sha256":  "e9bfde05f8490e1c60729f35ed2d63be38aa1a5d55f7d97449b9cc1e75412fc9",
+                      "size_bytes":  81
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/runtime/orchestrator.py",
+                      "sha256":  "f853d56219c0e83c70c53b28fb3f926c6af477c6fa72093323a67f152ea11d66",
+                      "size_bytes":  35733
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/scanner/__init__.py",
+                      "sha256":  "a002f38ba57216f199e2c1f1dbaf416eb75385763ac5f54d071c0f808886be27",
+                      "size_bytes":  171
+                  },
+                  {
+                      "path":  "src/crypto_trading_orchestrator/walkforward/__init__.py",
+                      "sha256":  "710364509d237ddd0779fc527fcc12b64f0431c4d5f8a1bbe5b705307e680e40",
+                      "size_bytes":  165
+                  },
+                  {
+                      "path":  "tests/conftest.py",
+                      "sha256":  "722ecd19196369327db1e31ed7b22528aa2399c2572989fc66ec2c23d88dab05",
+                      "size_bytes":  4617
+                  },
+                  {
+                      "path":  "tests/fixtures/exhausted_minor_pullbacks.json",
+                      "sha256":  "2f6729475ad33d9408422bfc751831437861b0c1c5dc353c54d7a04df9bed505",
+                      "size_bytes":  6306
+                  },
+                  {
+                      "path":  "tests/fixtures/healthy_continuation_long.json",
+                      "sha256":  "455c3064a1601aee67ce95959f4fdb36794d7a5b60d401162edad5585cad45c3",
+                      "size_bytes":  6306
+                  },
+                  {
+                      "path":  "tests/fixtures/prebreakout_compression.json",
+                      "sha256":  "0b1b04e65fd8676ce9828233bfb7aa0e1d46f8d5b14f0c887c402e381a24cd10",
+                      "size_bytes":  6303
+                  },
+                  {
+                      "path":  "tests/fixtures/reversal_liquidity_sweep.json",
+                      "sha256":  "015b3dd234bdb4e1ce3fbd584f50775818e11f9013f03050f4ccd0a90852ebaf",
+                      "size_bytes":  6300
+                  },
+                  {
+                      "path":  "tests/test_config_compatibility.py",
+                      "sha256":  "42bb8f78518586a9ce018ba2e3b4e8262b9876fd1858cc21a7525e4f27a2e513",
+                      "size_bytes":  1639
+                  },
+                  {
+                      "path":  "tests/test_events.py",
+                      "sha256":  "d9133ac26c9b7e540c608e6229d1e4306d5101be9bcf5f56b49ea72df8543008",
+                      "size_bytes":  1505
+                  },
+                  {
+                      "path":  "tests/test_persistence.py",
+                      "sha256":  "838c4285e87d461e43e5da8fa7dcfe09c7a47557267a70c757b3bd93c42917a4",
+                      "size_bytes":  842
+                  },
+                  {
+                      "path":  "tests/test_real_package_integration.py",
+                      "sha256":  "20bfd3422207c416a9e2fb64d852fbdcc4b7ff17972891fc8c2f362ceddf76de",
+                      "size_bytes":  9439
+                  },
+                  {
+                      "path":  "tests/test_runtime.py",
+                      "sha256":  "160c5141d5c1fdb61f16faf0198326ef107e6bc72b080da62f07d8a8ca8a1d8d",
+                      "size_bytes":  13527
+                  },
+                  {
+                      "path":  "tests/test_static_authority.py",
+                      "sha256":  "2833167ccc35bcef44d07b768d8b9b20d6a944e52f52eab2744d006d5b4475f5",
+                      "size_bytes":  2649
+                  }
+              ]
+}

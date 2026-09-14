@@ -69,7 +69,7 @@ See `REFERENCE_CONCEPT_MAP.md` for the full mapping and crypto redesign rational
 - `CONTRACT_VERSION`: `HM_CRYPTO_V1`
 - `STRATEGY_VERSION`: `HM_STRATEGY_V1`
 - `CONFIG_VERSION`: `HM_STRATEGY_CONFIG_V1`
-- `CONTRACT_SCHEMA_SHA256`: `d8e275f847c12dffea7313d67ea61ba59df59b434952ba3faa0ef310391f9cd7`
+- `CONTRACT_SCHEMA_SHA256`: `408b13714bd831ad2527801ef435d38681551e3b3ffee5eb7b1c96be579935e1`
 
 The root and packaged schema copies are byte-identical. Local definitions cover `MarketSnapshot`,
 `TradeIntent`, and `ExecutionReport`. Financial price/quantity/notional/PnL contract values use
@@ -208,6 +208,10 @@ Run 1: **64 passed, 0 failed** in 9.71 s
 
 Run 2: **64 passed, 0 failed** in 9.95 s
 
+Integration compatibility requalification (2026-09-15): **65 passed, 0 failed** after adding
+Package 1 `MarketSnapshot` adapter coverage. The two 64-test results above are retained as the
+historical release runs that preceded the added compatibility test.
+
 Normal tests perform no real exchange network calls and no real orders.
 
 ### CLI verification
@@ -229,7 +233,7 @@ Normal tests perform no real exchange network calls and no real orders.
 
 `walk-forward` example -> 7 ordered windows and all requested research output files written.
 
-`schema-hash` -> `d8e275f847c12dffea7313d67ea61ba59df59b434952ba3faa0ef310391f9cd7`
+`schema-hash` -> `408b13714bd831ad2527801ef435d38681551e3b3ffee5eb7b1c96be579935e1`
 
 ### Clean virtual environment / standalone packaging
 
